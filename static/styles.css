@@ -1,0 +1,177 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f5e6fe, #e8d9ff);
+    color: #4a4a4a;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('dna_background.png') no-repeat center center/cover;
+    height: 100vh;  /* Full screen height */
+    width: 100vw;   /* Full screen width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    max-width: 80%;
+}
+
+/* Container Styling */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 50px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #5a189a;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 15px;
+    border: 3px solid #d8b4f8;
+    border-radius: 20px;
+    font-size: 18px;
+    width: 80%;
+    text-align: center;
+    background-color: #f3e8ff;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+    border-color: #a56eff;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.4);
+}
+
+/* Buttons */
+button, .button {
+    padding: 18px 40px;
+    background: #8a2be2;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover, .button:hover {
+    background: #6a0dad;
+    transform: translateY(-3px);
+}
+
+/* Punnett Square Styling */
+#punnettSquare {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    border: 5px solid #d8b4f8;
+    font-size: 18px;
+}
+
+#punnettSquare th, #punnettSquare td {
+    border: 3px solid #d8b4f8;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background: #f3e8ff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Result Section */
+ul#percentages {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul#percentages li {
+    background: #f3e8ff;
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: #d8b4f8;
+    color: white;
+    font-size: 18px;
+    border-radius: 0 0 25px 25px;
+    margin-top: 50px;
+}
+
+/* Center Alignments */
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
