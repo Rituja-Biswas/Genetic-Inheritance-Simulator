@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Add hover effect to inputs
+    // effect to inputs
     const inputs = document.querySelectorAll("input");
     inputs.forEach(input => {
         input.addEventListener("focus", () => {
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Show success message on form submission
+    // success message 
     const form = document.getElementById("geneticForm");
     form.addEventListener("submit", function (e) {
         alert("Processing your genetic simulation...");
